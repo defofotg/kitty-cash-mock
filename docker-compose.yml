@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  mockserver:
+    image: defofotg/mockserver-kitty-cash:latest
+    container_name: mockserver-kitty-cash
+    ports:
+      - "1080:1080"
+      - "1090:1090"
