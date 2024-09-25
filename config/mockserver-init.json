@@ -1,26 +1,98 @@
 [
   {
     "httpRequest": {
-      "method": "GET",
-      "path": "/api/users"
+      "method": "POST",
+      "path": "/api/auth/login",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "username": "user-georges",
+          "password": "p@ssw0rdG3orges"
+        }
+      }
     },
     "httpResponse": {
       "statusCode": 200,
-      "body": "{\"users\": [{\"id\": 1, \"name\": \"John Doe\"}]}"
+      "body": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyLWdlb3JnZXMiLCJpYXQiOjE3MjczMDE4NDksImV4cCI6MTcyNzMwNTQ0OX0.wO5yeGiNqcxpGLqlq3a2MTTKBb3ibqI8IVnaYxkgDao"
+      }
     }
   },
   {
     "httpRequest": {
       "method": "POST",
-      "path": "/api/users",
+      "path": "/api/auth/login",
       "body": {
         "type": "JSON",
-        "json": "{\"name\": \"New User\"}"
+        "json": {
+          "username": "user-gerome",
+          "password": "p@ssw0rdG3rome"
+        }
       }
     },
     "httpResponse": {
-      "statusCode": 201,
-      "body": "{\"id\": 2, \"name\": \"New User\"}"
+      "statusCode": 200,
+      "body": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyLWdlcm9tZSIsImlhdCI6MTcyNzMwMTg0OSwiZXhwIjoxNzI3MzA1NDQ5fQ.lKPQiS2EWvRj-tYZn-sP9U2LDGcVU-szsi0XN6kM794"
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "username": "user-dimitri",
+          "password": "p@ssw0rdD1mitri"
+        }
+      }
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "body": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyLWRpbWl0cmkiLCJpYXQiOjE3MjczMDE4NDksImV4cCI6MTcyNzMwNTQ0OX0.Ql1bg8shprpKnKCYFt203zsNlSQWk7wQSSNIkvhfFVk"
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "username": "user-berger",
+          "password": "p@ssw0rdB3rger"
+        }
+      }
+    },
+    "httpResponse": {
+      "statusCode": 403,
+      "body": {
+        "message": "Invalid credentials"
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "username": {
+            "regex": "^(?!user-georges|user-gerome|user-dimitri|user-berger).*$"
+          }
+        }
+      }
+    },
+    "httpResponse": {
+      "statusCode": 403,
+      "body": {
+        "message": "Invalid credentials"
+      }
     }
   }
 ]
