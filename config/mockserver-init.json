@@ -6,7 +6,7 @@
       "body": {
         "type": "JSON",
         "json": {
-          "username": "user-georges",
+          "username": "user-georges@kitty-cash.com",
           "password": "p@ssw0rdG3orges"
         }
       }
@@ -25,7 +25,7 @@
       "body": {
         "type": "JSON",
         "json": {
-          "username": "user-gerome",
+          "username": "user-gerome@kitty-cash.com",
           "password": "p@ssw0rdG3rome"
         }
       }
@@ -44,7 +44,7 @@
       "body": {
         "type": "JSON",
         "json": {
-          "username": "user-dimitri",
+          "username": "user-dimitri@kitty-cash.com",
           "password": "p@ssw0rdD1mitri"
         }
       }
@@ -63,7 +63,7 @@
       "body": {
         "type": "JSON",
         "json": {
-          "username": "user-berger",
+          "username": "user-berger@kitty-cash.com",
           "password": "p@ssw0rdB3rger"
         }
       }
@@ -83,7 +83,7 @@
         "type": "JSON",
         "json": {
           "username": {
-            "regex": "^(?!user-georges|user-gerome|user-dimitri|user-berger).*$"
+            "regex": "^(?!user-georges@kitty-cash.com|user-gerome@kitty-cash.com|user-dimitri@kitty-cash.com|user-berger).*$"
           }
         }
       }
