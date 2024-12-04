@@ -52,8 +52,21 @@
     "httpResponse": {
       "statusCode": 200,
       "body": {
-        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyLWRpbWl0cmkiLCJpYXQiOjE3MjczMDE4NDksImV4cCI6MTcyNzMwNTQ0OX0.Ql1bg8shprpKnKCYFt203zsNlSQWk7wQSSNIkvhfFVk"
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyLWdlcm9tZSIsImlhdCI6MTcyNzMwMTg0OSwiZXhwIjoxNzI3MzA1NDQ5fQ.lKPQiS2EWvRj-tYZn-sP9U2LDGcVU-szsi0XN6kM794"
       }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/api/auth/logout",
+      "headers": {
+        "AuthToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyLWdlcm9tZSIsImlhdCI6MTcyNzMwMTg0OSwiZXhwIjoxNzI3MzA1NDQ5fQ.lKPQiS2EWvRj-tYZn-sP9U2LDGcVU-szsi0XN6kM794"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "body": "Logout successful"
     }
   },
   {
