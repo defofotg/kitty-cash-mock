@@ -6,7 +6,7 @@
       "body": {
         "type": "JSON",
         "json": {
-          "username": "user-georges@kitty-cash.com",
+          "username": "user@kitty-cash.com",
           "password": "p@ssw0rdG3orges"
         }
       }
@@ -25,34 +25,15 @@
       "body": {
         "type": "JSON",
         "json": {
-          "username": "user-gerome@kitty-cash.com",
-          "password": "p@ssw0rdG3rome"
-        }
+          "username": "unknown-user@kitty-cash.com"
+        },
+        "matchType": "ONLY_MATCHING_FIELDS"
       }
     },
     "httpResponse": {
-      "statusCode": 200,
+      "statusCode": 403,
       "body": {
-        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyLWdlcm9tZSIsImlhdCI6MTcyNzMwMTg0OSwiZXhwIjoxNzI3MzA1NDQ5fQ.lKPQiS2EWvRj-tYZn-sP9U2LDGcVU-szsi0XN6kM794"
-      }
-    }
-  },
-  {
-    "httpRequest": {
-      "method": "POST",
-      "path": "/api/auth/login",
-      "body": {
-        "type": "JSON",
-        "json": {
-          "username": "user-dimitri@kitty-cash.com",
-          "password": "p@ssw0rdD1mitri"
-        }
-      }
-    },
-    "httpResponse": {
-      "statusCode": 200,
-      "body": {
-        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyLWdlcm9tZSIsImlhdCI6MTcyNzMwMTg0OSwiZXhwIjoxNzI3MzA1NDQ5fQ.lKPQiS2EWvRj-tYZn-sP9U2LDGcVU-szsi0XN6kM794"
+        "message": "Invalid credentials"
       }
     }
   },
@@ -71,41 +52,11 @@
   },
   {
     "httpRequest": {
-      "method": "POST",
-      "path": "/api/auth/login",
-      "body": {
-        "type": "JSON",
-        "json": {
-          "username": "user-berger@kitty-cash.com",
-          "password": "p@ssw0rdB3rger"
-        }
-      }
+      "path": ".*"
     },
     "httpResponse": {
-      "statusCode": 403,
-      "body": {
-        "message": "Invalid credentials"
-      }
-    }
-  },
-  {
-    "httpRequest": {
-      "method": "POST",
-      "path": "/api/auth/login",
-      "body": {
-        "type": "JSON",
-        "json": {
-          "username": {
-            "regex": "^(?!user-georges@kitty-cash.com|user-gerome@kitty-cash.com|user-dimitri@kitty-cash.com|user-berger).*$"
-          }
-        }
-      }
-    },
-    "httpResponse": {
-      "statusCode": 403,
-      "body": {
-        "message": "Invalid credentials"
-      }
+      "statusCode": 404,
+      "body": "Request not matched"
     }
   }
 ]
