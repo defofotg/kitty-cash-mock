@@ -42,7 +42,7 @@
       "method": "POST",
       "path": "/api/auth/logout",
       "headers": {
-        "AuthToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyLWdlcm9tZSIsImlhdCI6MTcyNzMwMTg0OSwiZXhwIjoxNzI3MzA1NDQ5fQ.lKPQiS2EWvRj-tYZn-sP9U2LDGcVU-szsi0XN6kM794"
+        "AuthToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyLWdlb3JnZXMiLCJpYXQiOjE3MjczMDE4NDksImV4cCI6MTcyNzMwNTQ0OX0.wO5yeGiNqcxpGLqlq3a2MTTKBb3ibqI8IVnaYxkgDao"
       }
     },
     "httpResponse": {
