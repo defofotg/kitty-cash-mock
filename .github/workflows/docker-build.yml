@@ -41,7 +41,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cd /opt/kitty-cash-mock
+            cd /opt/kitty-cash/kitty-cash-mock
             docker-compose pull
             docker-compose up -d
 
