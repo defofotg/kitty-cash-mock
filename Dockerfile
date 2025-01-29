@@ -22,7 +22,7 @@ ENV MOCKSERVER_CORS_ALLOW_HEADERS="Allow, Accept, Content-Type, Origin, Authoriz
 ENV MOCKSERVER_CORS_ALLOW_METHODS="CONNECT, DELETE, GET, HEAD, OPTIONS, POST, PUT, TRACE"
 ENV MOCKSERVER_CORS_ALLOW_CREDENTIALS="true"
 ENV MOCKSERVER_CORS_MAX_AGE="300"
-ENV MOCKSERVER_CORS_ALLOW_ORIGIN="http://dev.kitty-cash.anaitech.net"
+ENV MOCKSERVER_CORS_ALLOW_ORIGIN="http://dev.kitty-cash.anaitech.net, http://mock.kitty-cash.anaitech.net"
 
 # Exposer les ports nécessaires
 EXPOSE 1080 1090
